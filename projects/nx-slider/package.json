@@ -1,0 +1,19 @@
+{
+  "name": "nx-slider",
+  "version": "0.0.1",
+  "homepage": "https://milovma1.bitbucket.io/nx-slider",
+  "description": "Angular slider component",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.com/milovma1/nx-slider"
+  },
+  "author": {
+    "email": "maxim.milovanov@novartis.com",
+    "name": "Maxim Milovanov"
+  },
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  }
+}
