@@ -1,4 +1,33 @@
-nx-split-page {
-  max-width: 100%;
-  width: 100%;
+.blue {
+  background-color: #0460a9;
+  flex: 1;
+}
+
+.header {
+  flex: 0 1 50px;
+  background: gray;
+}
+
+main {
+  position: relative;
+  flex: 1;
+  overflow-y: auto;
+}
+
+main > div {
+  position: relative;
+}
+
+footer {
+  background-color: gray;
+  height: 100px;
+  flex: 0 1 100px;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  overflow: hidden;
 }
