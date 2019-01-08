@@ -29,6 +29,7 @@
 }
 
 .side-nav__container {
+  flex: 1;
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -43,9 +44,7 @@
   transition-duration: 0.2s;
   transition-delay: 0.1s;
   transition-timing-function: linear;
-  background-color: var(--main-background);
-  overflow-y: auto;
-  flex: 1;
+  overflow: hidden;
 }
 
 .side-nav__container.right-mode {

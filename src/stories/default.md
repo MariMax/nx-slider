@@ -1,7 +1,7 @@
 ## Project setup
 
 ```
-npm i nx-split-page
+npm i nx-slider
 ```
 
 ## Basic usage example
@@ -14,7 +14,7 @@ npm i nx-split-page
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    NxSplitPageModule,
+    NxSliderModule,
   ],
 })
 export class AppModule {
@@ -25,36 +25,36 @@ export class AppModule {
 ### Add murkup to the template file
 
 ```
-<nx-split-page>
-  <div main-area>
-    main content goes here
-  </div>
-  <div side-area>
-    page sige content goes here
-  </div>
-</nx-split-page>
+<nx-slider>
+  content goes here
+</nx-slider>
 ```
 
-### Tempalte for this example looks like code below
+### Slider consists of 2 main elements, slider itself and toggler - directive, can be added to any element on the page in this case quetion mark in the header
+
+### Template for this page looks similar to the template bellow, will be explained in next stories.
+
+### The main part here is toggler and slider
 
 ```
 <style>
-.long-content {
-  background-color: #D13A32;
-  min-height: 500px;
-  width: 100%;
-}
-.short-content {
-  background-color: #0460a9;
-  height: 100px;
-  width: 100%;
-}
+  .content {
+    background-color: white;
+    flex: 1;
+  }
 </style>
-<nx-split-page [mainMinSize]="100" [sideMinSize]="50">
-  <div main-area class="long-content">
+<div class="container">
+  <div class="nibr-header">
+  <div class="app-name">App Name</div>
+  <button nxSliderToggle class="toggle-button">?</button>
+  <div class="user-name">User Name</div>
   </div>
-  <div side-area class="short-content">
+
+  <div class="wrapper">
+    <nx-slider [maxWidth]="300">
+      <div class="content"></div>
+    </nx-slider>
   </div>
-</nx-split-page>
+</div>
 
 ```
