@@ -7,6 +7,7 @@ import * as defaultText from './default.md';
 import * as longScrollablePage from './long-scrollable-page.md';
 import * as longText from './long-text.md';
 import * as longTextInSlider from './slider-with-long-text.md';
+import * as leftRight from './left-right.md';
 import * as wrongWay from './short-page-with-long-scrollable-content.md';
 import * as correctWay from './short-page-with-long-scrollable-content-correct-implementation.md';
 import * as manySliders from './many-sliders.md';
@@ -300,7 +301,7 @@ storiesOf('Nx-Slider', module)
   //#region left-right
   .add(
     'left-right',
-    withNotes({text: marked(longTextInSlider)})(() => ({
+    withNotes({text: marked(leftRight)})(() => ({
       moduleMetadata: {
         declarations: [NxSliderComponent, NxSliderToggleDirective],
       },

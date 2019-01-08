@@ -1,4 +1,4 @@
-# NxSplitPage
+# NxSlider
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.8.
 
@@ -12,4 +12,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Storybook/Demo
 
-available here https://milovma1.bitbucket.io/nx-split-page
+available here https://milovma1.bitbucket.io/nx-slider
